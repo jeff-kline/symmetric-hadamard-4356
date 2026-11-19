@@ -41,7 +41,7 @@ construction. The only contribution is the observation that together they
 settle these two census entries, with an explicit matrix and an exact check at
 order 4356. The census names no series based on this theorem, and its
 bibliography does not cite Wallis and Whiteman. A public index has since
-recorded 2116 by another route. Goryainov, Haemers, Konstantinova and Li
+recorded 2116 by a propus construction. Goryainov, Haemers, Konstantinova and Li
 (Discrete Appl. Math. 2027; arXiv:2512.16653) list the construction and,
 separately, mention Gritsenko's graph in the same section, without drawing the
 consequence for order 4356.
@@ -89,7 +89,7 @@ priority.
 | Claim | Status |
 |---|---|
 | A symmetric Hadamard matrix of order 4356 exists | published theorem (Wallis–Whiteman) with published inputs; certified computation of the explicit matrix |
-| A symmetric Hadamard matrix of order 2116 exists | published theorem with Mathon's published input; built by SageMath; not rebuilt here |
+| A symmetric Hadamard matrix of order 2116 exists | published theorem with Mathon's published input; implemented in SageMath; not rebuilt here |
 | The census lists 529 and 1089 as undecided | sourced (census text) |
 | No earlier published record beyond SageMath and the index | bounded search; see [audit/PRIOR-ART.md](audit/PRIOR-ART.md) |
 

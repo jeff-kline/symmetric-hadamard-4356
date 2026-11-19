@@ -73,7 +73,8 @@ search is recorded as NOT PERFORMED, not as a negative result.
   - `src/sage/graphs/strongly_regular_db.pyx` includes `GritsenkoGraph` for
     (65,32,15,16) and Mathon's construction for (45,22,10,11).
 - Sage commit search: "Trac #31394: add Gritsenko's SRG(65, 32, 15, 16)",
-  2021-03-18.
-- A run of SageMath 10.8 (Codex workspace, `sage-hadamard-census-2026-11-19`):
-  the dedicated constructor recognizes 2116 and 4356, and 2116 was built and
-  verified.
+  March 2021 (commit 0ad9af13c).
+- An independent run of SageMath 10.8, outside this repository: the dedicated
+  constructor recognizes 2116 and 4356. The 2116 case was also built and
+  checked in that run. The source confirms that the construction is
+  implemented; Sage's own doctest for this case is marked as a long test.

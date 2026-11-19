@@ -89,3 +89,28 @@ Findings and dispositions:
   - Disposition: version 0.2.0 credits SageMath, withdraws "no earlier record
     at 4356" (CORRECTIONS), and adds the census entry 529 (order 2116), by the
     author's decision.
+
+## 2026-11-19 — audit of the 0.2.0 changes
+
+A read-only audit (Sonnet) compared d4011c2 with 864c26f.
+
+**Verdict:** PASS-WITH-FIXES, no errors. The audit confirmed:
+- a clean archive gives 3 MATCH and a deterministic PDF, with all fonts Type 1;
+- the SageMath facts against the source at 981d7d71, including Trac #31394,
+  commit 0ad9af13c, March 2021;
+- the arithmetic for 2116 and 4356.
+
+Findings and dispositions:
+
+1. (documentation) The ADMISSION verdict lines contradicted each other.
+   Fixed.
+2. (sharpening) ADMISSION now names both orders, and the 0.1.0 claim is
+   marked withdrawn. Fixed.
+3. (sharpening) The CORRECTIONS policy referred only to 4356. Fixed.
+4. (gap) "SageMath builds 2116" rested on a run outside the repository.
+   Softened to "implements", which the source confirms.
+5. (sharpening) The Sage commit date is now March 2021 (0ad9af13c). Fixed.
+6. (documentation) The search log no longer names a working directory.
+   Fixed.
+7. (documentation) The DOI and release date are expected only at the freeze.
+8. (sharpening) "another route" became "a propus construction". Fixed.

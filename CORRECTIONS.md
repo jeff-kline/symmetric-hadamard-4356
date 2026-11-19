@@ -12,7 +12,7 @@ claims and artifacts.
   archive remain unchanged and identifiable.
 - A material error will be marked prominently in the README and in this file.
   The affected release will not be deleted or silently replaced.
-- If an earlier record of a symmetric Hadamard matrix of order 4356 is found,
+- If an earlier record of a symmetric Hadamard matrix of order 2116 or 4356 is found,
   it will be credited in a new version.
 
 Suspected errors may be reported through the repository's issue tracker:
