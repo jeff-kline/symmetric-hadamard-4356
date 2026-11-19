@@ -61,3 +61,19 @@ search is recorded as NOT PERFORMED, not as a negative result.
 - `vatskishan03/Hadamard`: no symmetric entry at 1089 or 4356; latest commit
   2026-11-06.
 - arXiv, newest entries matching "symmetric Hadamard": nothing new.
+
+## SageMath (2026-11-19, after the 0.1.0 release)
+
+- Source at commit 981d7d71 (SageMath 10.8):
+  - `src/sage/combinat/matrices/hadamard_matrix.py`:
+    - `rshcd_from_prime_power_and_conference_matrix` cites Wallis–Whiteman
+      Theorem 16 and Corollary 17;
+    - `regular_symmetric_hadamard_matrix_with_constant_diagonal` dispatches to
+      it when $\sqrt n+1$ is a prime power.
+  - `src/sage/graphs/strongly_regular_db.pyx` includes `GritsenkoGraph` for
+    (65,32,15,16) and Mathon's construction for (45,22,10,11).
+- Sage commit search: "Trac #31394: add Gritsenko's SRG(65, 32, 15, 16)",
+  2021-03-18.
+- A run of SageMath 10.8 (Codex workspace, `sage-hadamard-census-2026-11-19`):
+  the dedicated constructor recognizes 2116 and 4356, and 2116 was built and
+  verified.

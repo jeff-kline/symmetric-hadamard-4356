@@ -20,6 +20,24 @@ Suspected errors may be reported through the repository's issue tracker:
 
 ## Version history
 
+### 0.2.0 — in preparation
+
+- **Order of discovery.**
+  1. Order 4356 was identified independently, without consulting SageMath
+     (version 0.1.0).
+  2. A later survey of SageMath's constructors against the census showed
+     that SageMath already recognizes 4356.
+  3. The same survey showed that it also recognizes 2116.
+- **Earlier record found (priority).** SageMath implements the Wallis–Whiteman
+  construction (`rshcd_from_prime_power_and_conference_matrix`) and has
+  included Gritsenko's graph since 2021 (Trac #31394). Its constructor
+  recognizes order 4356. Version 0.1.0 did not examine SageMath and said it
+  found no earlier record; that statement is withdrawn and SageMath is
+  credited. The census update itself is unchanged.
+- **Scope.** The census entry 529 (order 2116), settled by the same theorem
+  with Mathon's conference matrix of order 46, is added. It is cited and not
+  rebuilt here.
+
 ### 0.1.0 — released 2026-11-19
 
 - Tag `v0.1.0` at commit `dff5519`; version DOI

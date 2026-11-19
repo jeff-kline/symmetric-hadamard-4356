@@ -73,3 +73,19 @@ Findings and dispositions:
 - Living metadata: README status paragraph and DOI badge, `CITATION.cff` DOI,
   identifiers and `date-released`, the note's DOI line, ADMISSION ADMITTED,
   the CORRECTIONS version history and the rescan record.
+
+## 2026-11-19 — after admission of 0.1.0: SageMath found; version 0.2.0
+
+- **Earlier record (gap in P1).** A census crosswalk run with SageMath 10.8
+  found that `regular_symmetric_hadamard_matrix_with_constant_diagonal`
+  recognizes order 4356.
+  - Confirmed in the Sage source:
+    - `rshcd_from_prime_power_and_conference_matrix` implements Wallis–Whiteman
+      Theorem 16 and Corollary 17;
+    - Gritsenko's graph has been in `strongly_regular_db` since 2021
+      (Trac #31394);
+    - Mathon's graph on 45 vertices is recognized.
+  - Version 0.1.0's search did not examine SageMath.
+  - Disposition: version 0.2.0 credits SageMath, withdraws "no earlier record
+    at 4356" (CORRECTIONS), and adds the census entry 529 (order 2116), by the
+    author's decision.

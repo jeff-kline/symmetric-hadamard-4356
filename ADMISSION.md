@@ -1,6 +1,6 @@
 # Admission record
 
-**Current state:** ADMITTED
+**Current state:** DRAFT (version 0.2.0); version 0.1.0 ADMITTED
 
 Current verdict: ADMITTED (2026-11-19)
 
@@ -21,7 +21,16 @@ certificate, or proof of global novelty.
 - titled and described as an update to the census, not a new construction;
 - the abstract and README introduction approved.
 
-## Principal claim
+## Version 0.2.0 (in preparation)
+
+After admission of 0.1.0, a scan of SageMath found that it already implements
+the construction and recognizes order 4356. Version 0.2.0 credits SageMath,
+withdraws the 0.1.0 statement "no earlier record at 4356", and adds the census
+entry 529 (order 2116), which follows from the same theorem. The author
+approved this scope on 2026-11-19. The gates below describe 0.1.0; they will
+be re-run for 0.2.0.
+
+## Principal claim (version 0.1.0)
 
 A regular symmetric Hadamard matrix with constant diagonal of order
 $4356=4\cdot1089$ exists, by Wallis–Whiteman (1972) applied to Gritsenko's
