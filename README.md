@@ -2,10 +2,11 @@
 
 Jeffery Kline
 
-**Status: draft.** This repository is being prepared for release under the
-project's
-[public research standard](https://jeff-kline.github.io/posts/research-program/index.html).
-No DOI exists yet.
+**Status: release candidate for version 0.1.0.** The claims are frozen
+and audited (see [ADMISSION.md](ADMISSION.md)). There is no tag, archive or
+DOI yet, so there is no stable citation. Admission under the project's
+[public research standard](https://jeff-kline.github.io/posts/research-program/index.html)
+is a release decision, not peer review or a correctness certificate.
 
 The note is [paper/main.pdf](paper/main.pdf); its source is
 [paper/main.tex](paper/main.tex).
@@ -30,11 +31,13 @@ builds that matrix and checks it exactly.
 
 Both ingredients are published. The only contribution is the observation
 that together they settle this census entry, with an explicit matrix and an
-exact check. The census does not track this series of constructions. The same theorem
+exact check. The census names no series based on this theorem, and its
+bibliography does not cite Wallis and Whiteman. The same theorem
 also settles $v=529$, which the census lists as undecided; a public index has
 since decided 529 by another route. Goryainov, Haemers, Konstantinova and Li
-(arXiv:2512.16653, 2025) state both ingredients in the same section without
-drawing the consequence for order 4356. We found no earlier record of a symmetric
+(Discrete Appl. Math. 2027; arXiv:2512.16653) list the construction and, separately,
+mention Gritsenko's graph in the same section, without drawing the consequence
+for order 4356. We found no earlier record of a symmetric
 Hadamard matrix of order 4356 in the sources examined
 ([audit/PRIOR-ART.md](audit/PRIOR-ART.md)). This is not a claim of global
 priority.
@@ -43,14 +46,16 @@ priority.
 
 - **Wallis and Whiteman (1972)**,
   [*Some classes of Hadamard matrices with constant diagonal*](https://doi.org/10.1017/S0004972700044993),
-  Theorem 16 and Corollary 17: the construction.
+  Theorem 16 and Corollary 17: the construction. The explicit Szekeres sets
+  used here are verified by the program.
 - **Gritsenko (2021)**,
   [*On strongly regular graph with parameters (65; 32; 15; 16)*](https://arxiv.org/abs/2102.05432):
   the graph, and so the conference matrix of order 66. Its adjacency matrix is
   reproduced in [data/srg65-gritsenko.txt](data/srg65-gritsenko.txt).
 - **Đoković and Seberry (2025)**,
   [*Census of symmetric and skew Hadamard matrices of order 4v for odd v < 2500*](https://us.ticmeet.com/assets/archivos/d6f1d9b8-d39f-4888-925a-7eb81c4905cc/jenni-paper.pdf),
-  conference manuscript dated 28 May 2025: lists 1089 as undecided.
+  manuscript, PDF dated 28 May 2025, posted with the Hadamard 2025 conference
+  materials: lists 1089 as undecided.
 - **Mathon (1978)**,
   [*Symmetric conference matrices of order pq²+1*](https://doi.org/10.4153/CJM-1978-029-1):
   the conference matrix of order 46 used for $v=529$.
@@ -77,8 +82,8 @@ matrix row pair by row pair.
 
 ## Reproduce
 
-The certificates need Python 3 with numpy and a C compiler; the note needs
-pdfLaTeX.
+The certificates need Python 3 with numpy (tested with numpy 2.0.2) and a C
+compiler; the note needs pdfLaTeX.
 
 ```sh
 make verify PY=python3   # a few seconds on one core
@@ -97,5 +102,7 @@ note.
 
 ## License
 
-GPL-3.0-only. See [LICENSE](LICENSE). The adjacency matrix in `data/` is
-reproduced from Gritsenko (2021), with attribution.
+GPL-3.0-only. See [LICENSE](LICENSE). The adjacency matrix in `data/` is a
+verbatim transcription of a published mathematical object from Gritsenko
+(2021), reproduced with attribution; it is not covered by the repository's
+licence.

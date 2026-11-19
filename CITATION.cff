@@ -35,6 +35,15 @@ references:
     volume: 7
     year: 1972
     doi: 10.1017/S0004972700044993
+  - type: generic
+    title: "Census of symmetric and skew Hadamard matrices of order 4v for odd v < 2500"
+    authors:
+      - family-names: Djoković
+        given-names: Dragomir Ž.
+      - family-names: Seberry
+        given-names: Jennifer
+    year: 2025
+    url: "https://us.ticmeet.com/assets/archivos/d6f1d9b8-d39f-4888-925a-7eb81c4905cc/jenni-paper.pdf"
   - type: article
     title: "On strongly regular graph with parameters (65; 32; 15; 16)"
     authors:

@@ -3,7 +3,7 @@
 ## Environment of the pinned run (2026-11-19)
 
 - macOS 26.6.2, x86_64, one core, run under `nice`.
-- Python 3 with numpy (the project venv), one BLAS thread.
+- Python 3.9.6 with numpy 2.0.2 (the project venv), one BLAS thread.
 - Apple clang 21.0.0, used as `cc -O2`.
 - pdfTeX 3.141592653-2.6-1.40.22 (TeX Live 2021).
 
