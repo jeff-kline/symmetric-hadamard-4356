@@ -2,19 +2,19 @@
 
 Jeffery Kline
 
-**Status: release candidate for version 0.2.0.** The claims are frozen and
-audited (see [ADMISSION.md](ADMISSION.md)); there is no tag or DOI for 0.2.0
-yet. Version 0.1.0 was admitted on
-2026-11-19 as
-[`v0.1.0`](https://github.com/jeff-kline/symmetric-hadamard-4356/releases/tag/v0.1.0),
-version DOI [`10.5281/zenodo.24379586`](https://doi.org/10.5281/zenodo.24379586).
-Version 0.2.0 adds the census entry 529 and credits the SageMath
-implementation; see [CORRECTIONS.md](CORRECTIONS.md). The concept DOI
-[`10.5281/zenodo.24379585`](https://doi.org/10.5281/zenodo.24379585) resolves
-to the latest version. Admission under the project's
+[![Version DOI: 10.5281/zenodo.24382706](https://zenodo.org/badge/DOI/10.5281/zenodo.24382706.svg)](https://doi.org/10.5281/zenodo.24382706)
+
+**Status: version 0.2.0 admitted 2026-11-20.** The immutable release is
+[`v0.2.0`](https://github.com/jeff-kline/symmetric-hadamard-4356/releases/tag/v0.2.0), archived at version DOI
+[`10.5281/zenodo.24382706`](https://doi.org/10.5281/zenodo.24382706). Version 0.1.0
+([`10.5281/zenodo.24379586`](https://doi.org/10.5281/zenodo.24379586)) is
+superseded; see [CORRECTIONS.md](CORRECTIONS.md). The concept DOI
+[`10.5281/zenodo.24379585`](https://doi.org/10.5281/zenodo.24379585) resolves to the latest version; cite the
+version DOI for reproducibility. Admission under the project's
 [public research standard](https://jeff-kline.github.io/posts/research-program/index.html)
 is a release decision, not peer review or a correctness certificate; see
-[ADMISSION.md](ADMISSION.md).
+[ADMISSION.md](ADMISSION.md). The tagged snapshot retains its prepublication
+“release candidate” wording because the DOI did not exist when it was made.
 
 The note is [paper/main.pdf](paper/main.pdf); its source is
 [paper/main.tex](paper/main.tex).

@@ -114,3 +114,15 @@ Findings and dispositions:
    Fixed.
 7. (documentation) The DOI and release date are expected only at the freeze.
 8. (sharpening) "another route" became "a propus construction". Fixed.
+
+## 2026-11-20 — version 0.2.0 tag, archive and admission
+
+- `main` was pushed to `881dc93`.
+- Tag `v0.2.0` (object `2faf43c`) → `881dc93`; the tagged-state audit passed
+  8 of 8.
+- The Release was published 2026-11-19 23:51 UTC.
+- Zenodo record 24382706 (version DOI 10.5281/zenodo.24382706, concept DOI 10.5281/zenodo.24379585) is
+  byte-identical to the pinned zipball (SHA-256 `01ef075e…`); the
+  archived-state audit passed 12 of 12.
+- Living metadata: README status and badge, `CITATION.cff` DOI and
+  `date-released`, the note's DOI line, ADMISSION and CORRECTIONS.

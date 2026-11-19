@@ -1,8 +1,8 @@
 # Admission record
 
-**Current state:** CANDIDATE (version 0.2.0); version 0.1.0 ADMITTED
+**Current state:** ADMITTED (version 0.2.0); version 0.1.0 superseded
 
-Current verdict: NOT YET ADMITTED (version 0.2.0); version 0.1.0 ADMITTED 2026-11-19
+Current verdict: ADMITTED (version 0.2.0, 2026-11-20); version 0.1.0 ADMITTED 2026-11-19, superseded
 
 **Version:** 0.1.0
 
@@ -21,7 +21,18 @@ certificate, or proof of global novelty.
 - titled and described as an update to the census, not a new construction;
 - the abstract and README introduction approved.
 
-## Version 0.2.0 (in preparation)
+## Version 0.2.0 — ADMITTED 2026-11-20
+
+- **Tag:** `v0.2.0` (object `2faf43c`) → `881dc93fb37275ad6e9a7ee9649e1bb66ad40ac7`; tagger is the GitHub noreply identity.
+- **Version DOI:** [`10.5281/zenodo.24382706`](https://doi.org/10.5281/zenodo.24382706) · **Concept DOI:** `10.5281/zenodo.24379585` · **Record:** <https://zenodo.org/records/24382706>
+- **Archive:** the pinned GitHub `zipball/v0.2.0` (downloaded twice, identical; 305407 bytes, SHA-256 `01ef075ef024d9680fcabf1c752b16293457717a896387937af363f30ed3c304`) and the Zenodo file are byte-identical; Zenodo MD5 `ea6057c8370d1c096caca40850a32bd2`. The archived-state audit passed 12 of 12.
+- **Gates for 0.2.0:**
+  - P1 PARTIAL, residuals accepted with the scope (SageMath credited; see `audit/PRIOR-ART.md`).
+  - A1 PASS.
+  - R1 PASS.
+- **External actions:** the author authorized the push, tag and Release ("both", 2026-11-19); the Release was published 2026-11-19 23:51 UTC. The site listing is updated before this record is pushed.
+
+### Background
 
 After admission of 0.1.0, a scan of SageMath found that it already implements
 the construction and recognizes orders 2116 and 4356. Version 0.2.0 credits SageMath,

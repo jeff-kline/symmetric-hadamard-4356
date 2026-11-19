@@ -20,7 +20,11 @@ Suspected errors may be reported through the repository's issue tracker:
 
 ## Version history
 
-### 0.2.0 — in preparation
+### 0.2.0 — released 2026-11-20
+
+- Tag `v0.2.0` at commit `881dc93`; version DOI
+  [`10.5281/zenodo.24382706`](https://doi.org/10.5281/zenodo.24382706), concept DOI `10.5281/zenodo.24379585`. The tagged snapshot
+  retains its prepublication wording; the living repository carries the DOI.
 
 - **Order of discovery.**
   1. Order 4356 was identified independently, without consulting SageMath
