@@ -52,3 +52,12 @@ search is recorded as NOT PERFORMED, not as a negative result.
 - Gritsenko (2021): the construction and the printed adjacency matrix.
 - Brouwer and Haemers, *Spectra of Graphs*, §10.5.1.
 - Mathon (1978): Crossref metadata (DOI 10.4153/CJM-1978-029-1).
+
+## Pre-tag rescan (2026-11-19T20:39Z)
+
+- GitHub code search: the positive control (`skew hadamard 1528`) hit
+  `vatskishan03/Hadamard`. `4356 symmetric hadamard` and `1089 symmetric`
+  returned only unrelated hits (language-model logs).
+- `vatskishan03/Hadamard`: no symmetric entry at 1089 or 4356; latest commit
+  2026-11-06.
+- arXiv, newest entries matching "symmetric Hadamard": nothing new.

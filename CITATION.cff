@@ -3,6 +3,15 @@ message: "Please cite Version 0.1.0 of this research repository."
 title: "An update to the census: symmetric Hadamard matrices of order 4356"
 type: software
 version: 0.1.0
+doi: 10.5281/zenodo.24379586
+date-released: 2026-11-19
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24379586
+    description: "Version DOI for release 0.1.0"
+  - type: doi
+    value: 10.5281/zenodo.24379585
+    description: "Concept DOI (all versions)"
 authors:
   - family-names: Kline
     given-names: Jeffery

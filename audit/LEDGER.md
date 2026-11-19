@@ -61,3 +61,15 @@ Findings and dispositions:
 12. (documentation) The repository URL resolves only after publication.
     Re-tested at the freeze.
 13. (sharpening) The licence status of `data/` is stated.
+
+## 2026-11-19 — tag, archive and admission
+
+- Pre-tag rescan: nothing new (see the search log).
+- Tag `v0.1.0` (object `bd77ed2`) → `dff5519`; the tagged-state audit passed
+  8 of 8. The GitHub Release was published at 2026-11-19 20:43 UTC.
+- Zenodo record 24379586 (version DOI 10.5281/zenodo.24379586, concept DOI 10.5281/zenodo.24379585). The Zenodo
+  file is byte-identical to the GitHub zipball pinned before the Release
+  (SHA-256 `79965c97…`); the archived-state audit passed 12 of 12.
+- Living metadata: README status paragraph and DOI badge, `CITATION.cff` DOI,
+  identifiers and `date-released`, the note's DOI line, ADMISSION ADMITTED,
+  the CORRECTIONS version history and the rescan record.
