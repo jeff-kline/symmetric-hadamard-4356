@@ -1,0 +1,1 @@
+PASS: order 4356, symmetric, diagonal 1, row and column sums 66, 9485190 row pairs orthogonal

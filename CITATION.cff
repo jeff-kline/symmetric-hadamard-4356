@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "Please cite Version 0.1.0 of this research repository."
+title: "An update to the census: symmetric Hadamard matrices of order 4356"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Kline
+    given-names: Jeffery
+repository-code: "https://github.com/jeff-kline/symmetric-hadamard-4356"
+url: "https://github.com/jeff-kline/symmetric-hadamard-4356"
+license: GPL-3.0-only
+abstract: >-
+  A short note updating one entry of the 2025 Đoković–Seberry census of
+  symmetric Hadamard matrices of order 4v, v odd: v = 1089 is listed as
+  undecided. No new construction is involved. Wallis and Whiteman (1972) give
+  a regular symmetric Hadamard matrix with constant diagonal of order (p-1)^2
+  from a symmetric conference matrix of order p-1, p a prime power; Gritsenko
+  (2021) supplies a symmetric conference matrix of order 66. With p = 67 this
+  gives order 4356 = 4·1089. The repository builds the matrix and checks it
+  exactly. Novelty is bounded to the sources searched.
+keywords:
+  - Hadamard matrices
+  - symmetric Hadamard matrices
+  - conference matrices
+  - strongly regular graphs
+references:
+  - type: article
+    title: "Some classes of Hadamard matrices with constant diagonal"
+    authors:
+      - family-names: Wallis
+        given-names: Jennifer
+      - family-names: Whiteman
+        given-names: Albert Leon
+    journal: "Bulletin of the Australian Mathematical Society"
+    volume: 7
+    year: 1972
+    doi: 10.1017/S0004972700044993
+  - type: article
+    title: "On strongly regular graph with parameters (65; 32; 15; 16)"
+    authors:
+      - family-names: Gritsenko
+        given-names: Oleg
+    year: 2021
+    url: "https://arxiv.org/abs/2102.05432"

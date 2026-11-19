@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={An update to the census: symmetric Hadamard matrices of order 4356},pdfauthor={Jeffery Kline}}
+\newtheorem{theorem}{Theorem}
+\newcommand{\F}{\mathbb F}
+\emergencystretch=2em
+
+\title{An update to the census: symmetric Hadamard matrices of order 4356}
+\author{Jeffery Kline}
+\date{Draft, 19 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This note updates one entry of the 2025 census of \DJ{}okovi\'c and Seberry, which lists $v=1089$ among the odd $v<2500$ for which the existence of a symmetric Hadamard matrix of order $4v$ is undecided. No new construction is involved. A theorem of Wallis and Whiteman (1972) gives a regular symmetric Hadamard matrix with constant diagonal of order $(p-1)^2$ whenever $p$ is a prime power and a symmetric conference matrix of order $p-1$ exists. Gritsenko (2021) constructed a strongly regular graph with parameters $(65,32,15,16)$, which supplies a symmetric conference matrix of order $66$. With $p=67$ the theorem gives a symmetric Hadamard matrix of order $66^2=4356=4\cdot1089$. We record the construction and an exact computer check. Both ingredients are published; the only contribution is the observation that together they settle this entry.
+\end{abstract}
+
+\section{The census entry}
+The census~\cite{DS} lists, for odd $v<2500$, the orders $4v$ at which a symmetric Hadamard matrix is known, series by series, and the 595 values of $v$ for which existence is undecided. The value $v=1089=33^2$ is on that list. None of its named series is the Wallis--Whiteman construction used below. \DJ{}okovi\'c's later paper~\cite{D25} settles three further values, not including $1089$. The public index~\cite{GSI} (checked 19 November 2026) records a skew Hadamard matrix of order $4356$ but no symmetric one. Goryainov, Haemers, Konstantinova and Li~\cite{GHKL} list the Wallis--Whiteman construction among the known constructions of these matrices and, separately, note that Gritsenko's graph gives a symmetric conference matrix of order $66$; they do not draw the consequence for order $4356$.
+
+\section{The construction}
+Let $G$ be an abelian group of order $2m+1$. Two $m$-subsets $X,Y\subset G$ are \emph{Szekeres difference sets} if every nonzero element of $G$ arises exactly $m-1$ times as a difference of two elements of $X$ or of two elements of $Y$. The type~1 incidence matrix of $S\subset G$ is $M_S=(\epsilon_{g,h})$, with $\epsilon_{g,h}=1$ if $h-g\in S$ and $-1$ otherwise. A symmetric conference matrix of order $4m+2$ can be normalized to $\left(\begin{smallmatrix}0&f\\ f^{\mathsf T}&W\end{smallmatrix}\right)$, where $f$ is a row of ones; then $W=W^{\mathsf T}$, $W$ has zero diagonal, $WJ=0$ and $W^2=(4m+1)I-J$.
+
+\begin{theorem}[Wallis--Whiteman~{\cite[Theorem~16]{WW}}]
+Let $X,Y$ be Szekeres difference sets of size $m$ in an abelian group of order $2m+1$, with $X\cap(-X)=\emptyset$ and $Y=-Y$, and suppose a symmetric conference matrix of order $4m+2$ exists. Put $B=M_X$, $A=-M_Y$, let $e$ and $f$ be rows of ones of lengths $2m+1$ and $4m+1$, let $\otimes$ be the Kronecker product, and put
+\[
+P_\pm=\pm A\otimes W+J\otimes I,\qquad R=-(B+I)\otimes W+I\otimes J+(I-J)\otimes I.
+\]
+Then
+\[
+H=\begin{pmatrix}
+1 & f & e\otimes f & -e\otimes f\\
+f^{\mathsf T} & J & e\otimes(W-I) & e\otimes(W+I)\\
+e^{\mathsf T}\otimes f^{\mathsf T} & e^{\mathsf T}\otimes(W-I) & P_+ & R\\
+-e^{\mathsf T}\otimes f^{\mathsf T} & e^{\mathsf T}\otimes(W+I) & R^{\mathsf T} & P_-
+\end{pmatrix}
+\]
+is a regular symmetric Hadamard matrix of order $4(2m+1)^2$ with constant diagonal.
+\end{theorem}
+
+Their Corollary~17 supplies the difference sets for $m=(p-3)/4$, $p$ a prime power. We use $m=16$, $p=67$. Let $Q$ be the group of nonzero squares in $\F_{67}$, cyclic of order $33$, and take
+\[
+X=\{x\in Q: x-1\in Q\},\qquad Y=\{y\in Q: y+1\in Q\},
+\]
+written additively through a discrete logarithm. Since $-1$ is a nonsquare, $x\in X$ implies $x^{-1}\notin X$, while $Y$ is closed under inversion.
+
+For $W$ take the Seidel matrix of Gritsenko's graph~\cite{G21}: $W=J-I-2\,\mathrm{Adj}$, of order $65$. Its strong regularity with parameters $(65,32,15,16)$ gives $W^2=65I-J$ and $WJ=0$, so bordering $W$ by a row and column of ones gives a symmetric conference matrix of order $66$.
+
+\section{Verification}
+A short program checks every step in exact arithmetic. The printed adjacency matrix of~\cite{G21} is symmetric with zero diagonal and row sums $32$, and adjacent and nonadjacent pairs have $15$ and $16$ common neighbours; the bordered matrix $C$ of order $66$ satisfies $C^2=65I$. The sets $X,Y$ have size $16$, and their differences cover every nonzero element of $\mathbb Z_{33}$ exactly $15$ times. The relations $B^{\mathsf T}+B=-2I$, $A=A^{\mathsf T}$, $AB=BA$, $AJ=J$, $BJ=-J$ and $AA^{\mathsf T}+BB^{\mathsf T}=68I-2J$ hold. The assembled $H$ has order $4356$, entries $\pm1$, $H=H^{\mathsf T}$, diagonal entries $1$, every row and column sum $66$, and $HH^{\mathsf T}=4356\,I$, computed in full. The run takes a few seconds on one processor core. A second program, sharing no code with the first, re-checks every pair of rows.
+
+\section{Remarks}
+The same theorem applies whenever $a\equiv2\pmod4$, $a+1$ is a prime power and a symmetric conference matrix of order $a$ exists; the order is $a^2=4(a/2)^2$. For $2<a<100$ this gives $v=a^2/4\in\{9,25,81,169,225,441,529,1089,1681\}$ from $a=6,10,18,26,30,42,46,66,82$. The census decides all of these except $529$ and $1089$. At $v=529$ the input is Mathon's conference matrix of order $46$~\cite{M78}; the public index~\cite{GSI} decides $529$ by another route. Thus $1089$ is the one census value that this theorem newly settles. We found no earlier record of a symmetric Hadamard matrix of order $4356$ in the sources examined; this is not a claim of global priority.
+
+\paragraph{Role of AI.}
+AI assisted the source search, the computer verification and the exposition under the author's direction. No independent human expert has examined the note.
+
+\begin{footnotesize}
+\begin{thebibliography}{9}
+\bibitem{D25} D.~\v{Z}.~\DJ{}okovi\'c, \href{https://arxiv.org/abs/2508.17141}{Orthogonal designs and symmetric Hadamard matrices}, arXiv:2508.17141, 2025.
+\bibitem{DS} D.~\v{Z}.~\DJ{}okovi\'c and J.~Seberry, \href{https://us.ticmeet.com/assets/archivos/d6f1d9b8-d39f-4888-925a-7eb81c4905cc/jenni-paper.pdf}{Census of symmetric and skew Hadamard matrices of order $4v$ for odd $v<2500$}, conference manuscript (Hadamard 2025), dated 28 May 2025.
+\bibitem{GHKL} S.~Goryainov, W.~H.~Haemers, E.~V.~Konstantinova and H.~Li, \href{https://arxiv.org/abs/2512.16653}{Thin divisible design graphs: an interplay between fixed-point free involutions of $(v,k,\lambda)$-graphs and symmetric weighing matrices}, arXiv:2512.16653, 2025.
+\bibitem{GSI} \href{https://github.com/vatskishan03/Hadamard}{\texttt{vatskishan03/Hadamard}}, public index of Hadamard constructions, GitHub, accessed 19 November 2026.
+\bibitem{G21} O.~Gritsenko, \href{https://arxiv.org/abs/2102.05432}{On strongly regular graph with parameters $(65;32;15;16)$}, arXiv:2102.05432, 2021.
+\bibitem{M78} R.~Mathon, \href{https://doi.org/10.4153/CJM-1978-029-1}{Symmetric conference matrices of order $pq^2+1$}, Canad.\ J.\ Math.\ \textbf{30} (1978), 321--331.
+\bibitem{WW} J.~Wallis and A.~L.~Whiteman, \href{https://doi.org/10.1017/S0004972700044993}{Some classes of Hadamard matrices with constant diagonal}, Bull.\ Austral.\ Math.\ Soc.\ \textbf{7} (1972), 233--249.
+\end{thebibliography}
+\end{footnotesize}
+\end{document}

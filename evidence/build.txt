@@ -1,0 +1,5 @@
+SRG(65,32,15,16) verified
+symmetric conference matrix of order 66 verified: C^2 = 65 I
+Szekeres difference sets of size 16 in Z_33 verified (X skew, Y symmetric)
+Lemma relations for A, B verified
+H: order 4356, symmetric, diagonal 1, row sum 66, H H^T = 4356 I
