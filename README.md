@@ -2,7 +2,9 @@
 
 Jeffery Kline
 
-**Status: version 0.2.0 in preparation.** Version 0.1.0 was admitted on
+**Status: release candidate for version 0.2.0.** The claims are frozen and
+audited (see [ADMISSION.md](ADMISSION.md)); there is no tag or DOI for 0.2.0
+yet. Version 0.1.0 was admitted on
 2026-11-19 as
 [`v0.1.0`](https://github.com/jeff-kline/symmetric-hadamard-4356/releases/tag/v0.1.0),
 version DOI [`10.5281/zenodo.24379586`](https://doi.org/10.5281/zenodo.24379586).

@@ -1,8 +1,8 @@
 # Admission record
 
-**Current state:** DRAFT (version 0.2.0); version 0.1.0 ADMITTED
+**Current state:** CANDIDATE (version 0.2.0); version 0.1.0 ADMITTED
 
-Verdict for version 0.1.0: ADMITTED (2026-11-19); version 0.2.0 pending
+Current verdict: NOT YET ADMITTED (version 0.2.0); version 0.1.0 ADMITTED 2026-11-19
 
 **Version:** 0.1.0
 
@@ -27,8 +27,12 @@ After admission of 0.1.0, a scan of SageMath found that it already implements
 the construction and recognizes orders 2116 and 4356. Version 0.2.0 credits SageMath,
 withdraws the 0.1.0 statement "no earlier record at 4356", and adds the census
 entry 529 (order 2116), which follows from the same theorem. The author
-approved this scope on 2026-11-19. The gates below describe 0.1.0; they will
-be re-run for 0.2.0.
+approved this scope and its abstract and README introduction on 2026-11-19.
+For 0.2.0: P1 PARTIAL (SageMath credited; residuals as in `audit/PRIOR-ART.md`);
+A1 PASS (an audit of the 0.2.0 changes, findings and dispositions in
+`audit/LEDGER.md`); R1 in progress (`make verify` 3 MATCH and a deterministic
+`make paper` from a clean archive; no 0.2.0 tag or DOI yet). The gates below
+describe 0.1.0.
 
 ## Principal claim (version 0.1.0; the no-earlier-record statement is withdrawn in 0.2.0, see CORRECTIONS.md)
 
